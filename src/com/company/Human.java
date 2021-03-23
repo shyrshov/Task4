@@ -6,6 +6,7 @@ class Human {
     String firstName;
     String lastName;
     double height;
+
     public void newHuman(double weight, double age, String firstName, String lastName, double height){
         this.weight = weight;
         this.age = age;
