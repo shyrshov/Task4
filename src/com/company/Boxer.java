@@ -25,6 +25,7 @@ public class Boxer {
     }
 
     public static void main(String[] args) {
+
         Boxer anotherBoxer = new Boxer(32, 75, 30);
         boolean result = fight(anotherBoxer);
         System.out.println(result);
