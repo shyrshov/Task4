@@ -7,10 +7,11 @@ class Wheels {
     }
 }
 //uses-a
-class Engine {
-    public int power;
-    public void addEngine () {
-        System.out.println(power);
+class Garage {
+    public int place;
+    public void addPlace (int place) {
+        this.place = place;
+        System.out.println(place);
     }
 }
 class Car {
@@ -18,8 +19,11 @@ class Car {
     public int getNumberofWheels() {
         return wheels.getNumberOfWheels();
     }
-    Car car = new Car();
-    car.addEngine(1500);
+
+    public static void main(String[] args) {
+        Garage garage = new Garage();
+        garage.addPlace(3);
     }
 }
+
 
