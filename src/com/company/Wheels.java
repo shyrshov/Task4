@@ -12,7 +12,7 @@ class Car {
     public int getNumberofWheels() {
         return wheels.getNumberOfWheels();
     }
-    Car car = new Car;
+    Car car = new Car();
     car.addEngine();
 
 }
