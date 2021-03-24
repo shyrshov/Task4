@@ -6,20 +6,20 @@ class Wheels {
         return 4;
     }
 }
-
+//uses-a
+class Engine {
+    public int power;
+    public void addEngine () {
+        System.out.println(power);
+    }
+}
 class Car {
     Wheels wheels;
     public int getNumberofWheels() {
         return wheels.getNumberOfWheels();
     }
     Car car = new Car();
-    car.addEngine();
-
-}
-//uses-a
-class Engine {
-    public int power;
-    public void addEngine () {
-        System.out.println("1500sm3");
+    car.addEngine(1500);
     }
 }
+

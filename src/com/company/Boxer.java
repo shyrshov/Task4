@@ -13,22 +13,22 @@ public class Boxer {
         this.strength = strength;
     }
 
-    public static boolean fight(Boxer anotherBoxer) {
-        Boxer boxer = new Boxer(30, 80, 25);
-        int a = boxer.age * boxer.weight * boxer.strength;
-        int b = anotherBoxer.age * anotherBoxer.weight * anotherBoxer.strength;
-        if (a > b) {
+    public boolean fight(Boxer anotherBoxer) {
+        int ourBoxerParameters = this.age * this.weight * this.strength;
+        int otherBoxerParameters = anotherBoxer.age * anotherBoxer.weight * anotherBoxer.strength;
+        if (ourBoxerParameters > otherBoxerParameters) {
             return true;
         } else {
             return false;
         }
     }
-
-    public static void main(String[] args) {
-
-        Boxer anotherBoxer = new Boxer(32, 75, 30);
-        boolean result = fight(anotherBoxer);
-        System.out.println(result);
-    }
+}
+class Ring {
+        public static void main(String[] args) {
+            Boxer boxer = new Boxer(30, 80, 25);
+            Boxer anotherBoxer = new Boxer(32, 75, 30);
+            boolean result = boxer.fight(anotherBoxer);
+            System.out.println(result);
+        }
 }
 
