@@ -5,7 +5,7 @@ public class Overloaded {
     double secondVar;
     int thirdVar;
 
-    public Overloaded (int firstVar, double secondVar, int thirdVar) {
+    public void overloaded (int firstVar, double secondVar, int thirdVar) {
         this.firstVar = firstVar;
         this.secondVar = secondVar;
         this.thirdVar = thirdVar;
